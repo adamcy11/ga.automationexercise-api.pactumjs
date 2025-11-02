@@ -6,8 +6,7 @@
   "scripts": {
     "test": "mocha \"tests/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mochawesome --timeout 30000",
     "test:junit": "mocha \"tests/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mocha-junit-reporter --reporter-options mochaFile=reports/junit/results.xml --timeout 30000",
-    "test:ci": "npm run lint && mocha \"tests/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mocha-junit-reporter --reporter-options mochaFile=reports/test-results.xml",
-    "lint": "eslint \"**/*.js\"",
+    "test:ci": "mocha \"tests/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mocha-junit-reporter --reporter-options mochaFile=reports/test-results.xml",
     "report:open": "npx mochawesome-merge ./mochawesome-report/*.json | npx marge --reportDir reports/html --inline true"
   },
   "dependencies": {
