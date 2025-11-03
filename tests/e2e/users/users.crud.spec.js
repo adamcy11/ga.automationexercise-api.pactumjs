@@ -1,8 +1,8 @@
-import { spec } from '../../src/utils/client.js';
+import { spec } from '../../../src/utils/client.js';
 import { expect } from 'chai';
-import { makeUser } from '../../src/data/users.factory.js';
-import { listUsers, userById, commonMessage } from '../../src/schemas/user.schema.js';
-import { expectJoi } from '../../src/utils/validators.js';
+import { makeUser } from '../../../src/data/users.factory.js';
+import { listUsers, userById, commonMessage } from '../../../src/schemas/user.schema.js';
+import { expectJoi } from '../../../src/utils/validators.js';
 
 let createdId;
 let createdUserPayload;

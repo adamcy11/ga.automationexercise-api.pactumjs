@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "test": "mocha \"tests/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mochawesome --timeout 30000",
-    "test:junit": "mocha \"tests/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mocha-junit-reporter --reporter-options mochaFile=reports/junit/results.xml --timeout 30000",
+    "test:health": "mocha \"tests/health/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mochawesome --timeout 10000",
+    "test:contract": "mocha \"tests/contract/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mochawesome --timeout 30000",
+    "test:users": "mocha \"tests/e2e/users/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mochawesome --timeout 40000",
+    "test:products": "mocha \"tests/e2e/products/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mochawesome --timeout 40000",
     "test:ci": "mocha \"tests/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mocha-junit-reporter --reporter-options mochaFile=reports/test-results.xml",
     "report:open": "npx mochawesome-merge ./mochawesome-report/*.json | npx marge --reportDir reports/html --inline true"
   },

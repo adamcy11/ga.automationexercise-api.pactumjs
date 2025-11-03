@@ -1,8 +1,8 @@
-import { spec } from '../../src/utils/client.js';
+import { spec } from '../../../src/utils/client.js';
 import { expect } from 'chai';
-import { makeProduct } from '../../src/data/products.factory.js';
-import { listProducts, product as productSchema } from '../../src/schemas/product.schema.js';
-import { expectJoi } from '../../src/utils/validators.js';
+import { makeProduct } from '../../../src/data/products.factory.js';
+import { listProducts, product as productSchema } from '../../../src/schemas/product.schema.js';
+import { expectJoi } from '../../../src/utils/validators.js';
 
 let authToken;
 let productId;

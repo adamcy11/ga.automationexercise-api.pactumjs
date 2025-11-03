@@ -1,0 +1,7 @@
+{
+  "health": ["tests/health/**/*.spec.js"],
+  "contract": ["tests/contract/**/*.spec.js"],
+  "users": ["tests/e2e/users/**/*.spec.js"],
+  "products": ["tests/e2e/products/**/*.spec.js"],
+  "all": ["tests/**/*.spec.js"]
+}
