@@ -9,6 +9,7 @@
         "quiet": true,
         "overwrite": true,
         "html": true,
-        "json": true
+        "json": true,
+        "consoleReporter": "none"
     }
 }
