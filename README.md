@@ -1,4 +1,6 @@
 # Teste de Automação de API – Automation Exercise
+<br>
+<br>
 
 ## Tecnologias Utilizadas  
 
@@ -10,13 +12,19 @@
 - [Mochawesome](https://www.npmjs.com/package/mochawesome)  
 - [GitHub Actions](https://github.com/features/actions) (para CI/CD)
 
+<br>
+<br>
+
 ## Pré-requisitos  
 
 Antes de iniciar, verifique se você possui instalado:  
 
 - **Node.js** (versão 18 ou superior)  
 - **npm** (gerenciador de pacotes do Node)  
-- **Git** configurado  
+- **Git** configurado
+  
+<br>
+<br>
 
 ## Instalação  
 
@@ -46,6 +54,9 @@ npm install
 npm test
 ```
 
+<br>
+<br>
+
 2. **Executar uma suíte específica**
 
 - Executa verificações de health check da API:
@@ -72,8 +83,21 @@ npm run test:users
 npm run test:products
 ```
 
-- Gera o relatório unificado:
+<br>
+<br>
+
+## Relatórios
+
+- Localmente executar com múltiplos repórteres (JUnit + Mochawesome):
 
 ```bash
-npm run report:open
+npm run test:ci
 ```
+
+- Abrir o relatório HTML (Mochawesome):
+
+ **Caminho:** mochawesome-report/mochawesome.html
+
+- Arquivo JUnit XML (para integrações):
+
+**Caminho:** reports/test-results.xml
