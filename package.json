@@ -9,7 +9,7 @@
     "test:contract": "mocha \"tests/contract/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mochawesome --timeout 30000",
     "test:users": "mocha \"tests/e2e/users/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mochawesome --timeout 40000",
     "test:products": "mocha \"tests/e2e/products/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mochawesome --timeout 40000",
-    "test:ci": "mocha \"tests/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mocha-junit-reporter --reporter-options mochaFile=reports/test-results.xml",
+    "test:ci": "mocha \"tests/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mocha-multi-reporters --reporter-options configFile=mocha-multi.json --timeout 60000",
     "report:open": "npx mochawesome-merge ./mochawesome-report/*.json | npx marge --reportDir reports/html --inline true"
   },
   "dependencies": {
@@ -18,12 +18,13 @@
     "pactum": "^3.6.0"
   },
   "devDependencies": {
-    "chai": "^4.5.0",
-    "eslint": "^9.11.1",
-    "mocha": "^10.7.0",
-    "mocha-junit-reporter": "^2.2.0",
-    "mochawesome": "^7.1.3",
-    "mochawesome-merge": "^4.3.0",
-    "mochawesome-report-generator": "^6.2.0"
-  }
+  "chai": "^4.5.0",
+  "eslint": "^9.11.1",
+  "mocha": "^10.7.0",
+  "mocha-junit-reporter": "^2.2.0",
+  "mocha-multi-reporters": "^1.5.1",
+  "mochawesome": "^7.1.3",
+  "mochawesome-merge": "^4.3.0",
+  "mochawesome-report-generator": "^6.2.0"
+}
 }
