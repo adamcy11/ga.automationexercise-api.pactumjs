@@ -38,7 +38,7 @@ git clone https://github.com/adamcy11/ga.automationexercise-api.pactumjs.git
 2. **Acesse a pasta do projeto:**
 
 ```bash
-cd qa.automationexercise-api.pactumjs
+cd ga.automationexercise-api.pactumjs
 ```
 
 3. **Instale as dependências:**
