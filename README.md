@@ -32,13 +32,13 @@ Antes de iniciar, verifique se você possui instalado:
 1. **Clone o repositório**
 
 ```bash
-git clone https://github.com/adamcy11/qa.automationexercise-api.pactumjs.git
+git clone https://github.com/adamcy11/ga.automationexercise-api.pactumjs.git
 ```
 
 2. **Acesse a pasta do projeto:**
 
 ```bash
-cd qa.automationexercise-api.pactumjs
+cd ga.automationexercise-api.pactumjs
 ```
 
 3. **Instale as dependências:**
