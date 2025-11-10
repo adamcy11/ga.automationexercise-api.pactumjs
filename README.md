@@ -11,6 +11,7 @@
 - [Joi](https://joi.dev/)  
 - [Mochawesome](https://www.npmjs.com/package/mochawesome)  
 - [GitHub Actions](https://github.com/features/actions) (para CI/CD)
+- [Java](https://www.oracle.com/java/technologies/downloads/#jdk21-windows)
 
 <br>
 <br>
