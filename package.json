@@ -10,7 +10,7 @@
     "test:users": "mocha \"tests/e2e/users/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mochawesome --timeout 40000",
     "test:products": "mocha \"tests/e2e/products/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mochawesome --timeout 40000",
     "test:ci": "mocha \"tests/**/*.spec.js\" --file src/hooks/mocha.global.js --reporter mocha-multi-reporters --reporter-options configFile=mocha-multi.json --timeout 60000",
-    "report:open": "npx mochawesome-merge ./mochawesome-report/*.json | npx marge --reportDir reports/html --inline true"
+    "report:open": "start mochawesome-report/mochawesome.html"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
