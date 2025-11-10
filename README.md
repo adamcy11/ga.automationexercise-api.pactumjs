@@ -94,11 +94,8 @@ npm run test:products
 ```bash
 npm run test:ci
 ```
+- Para abrir o Relatório do Teste na Web
+```bash
+npm run report:open
+```
 
-- Abrir o relatório HTML (Mochawesome):
-
- **Caminho:** mochawesome-report/mochawesome.html
-
-- Arquivo JUnit XML (para integrações):
-
-**Caminho:** reports/test-results.xml
